@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <title>Electrical System Assembly Guide</title>
+    <meta name="description" content="A guide to the final assembly of CRISPEE's electronic components" />
+    <meta name="keywords" content="CRISPEE, Wellesley College HCI, Tufts University DevTech, tangible, toy, bioengineering, education" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Electronic System Assembly Guide</h1>
+    <p><i>CRISPEE’s full electronic assembly is detailed here. It is assumed that you have already completed the steps in the <a href="#">Soldering Guide</a> and have already completed the Base External Shell and the Internal Wall steps of the <a href="#">Wooden Shell Assembly Guide</a>.</i></p>
+
+    <h2>Arcade Button</h2>
+    <p>To attach the button:</p>
+    <ol>
+      <li>Sit the arcade button in the circular cutout on the left side of CRISPEE’s face</li>
+      <li>Screw the black plastic nut onto the portion of the button sticking into CRISPEE’s internal space</li>
+    </ol>
+
+    <h2>Lantern</h2>
+    <p>To create the light diffusion dome:</p>
+    <ol>
+      <li>Paint the inside of an x inch wide acrylic dome with a moderate layer of white acrylic paint</li>
+      <li>Let the paint dry</li>
+      <li>Sand down the coat of paint so it’s smooth and even</li>
+    </ol>
+    <p>To attach the Neopixel Jewel that will light the faceplate lantern:</p>
+    <ol>
+      <li>Thread the Jewel’s leads through the hole at the top of CRISPEE’s face</li>
+      <li>Spread industrial glue over the back of the Jewel</li>
+      <li>Press the Jewel down into CRISPEE’s face so that the face plate will be centered over the platform opening (the Jewel will be sticking out of the hole in each face plate)</li>
+      <li>Dribble a thin line of glue over the base of the acrylic light diffusion dome</li>
+      <li>Press the dome down over the Jewel, ensuring the faceplate will still be centered over the platform opening</li>
+    </ol>
+    <img src="" alt="Image of CRISPEE's lantern with a faceplate fitted over it">
+
+    <h2>Connecting All the Pieces</h2>
+    <p>After the systems have been assembled and each electronic piece is glued to its place on CRISPEE, it’s just a matter of attaching the right lead or ring connector to the right pin
+       or terminal block. To attach a ring connector to a terminal block:</p>
+    <ol>
+      <li>Thread a screw through the ring connector</li>
+      <li>Bolt the screw into the terminal block</li>
+    </ol>
+    <p>Lead and pin matchups are detailed below. If a lead is omitted in the chart, it remains disconnected, possibly covered with electrical tape for safety. If a lead connects to a terminal block,
+      crimp a ring connector onto the lead to ensure a more secure connection. Refer to the Crimping Guide for instructions on crimping a ring connector onto these leads</p>
+
+    <br>
+
+      <table>
+        <tr>
+          <th>Arcade Button Lead</th>
+          <th>Attach To</th>
+        </tr>
+        <tr>
+          <td>Button Data</td>
+          <td>Pin 5 on Arduino Uno</td>
+        </tr>
+        <tr>
+          <td>Button LED</td>
+          <td>Pin 4 on Arduino Uno</td>
+        </tr>
+        <tr>
+          <td>Button Ground</td>
+          <td>GND on 4-width terminal block</td>
+        </tr>
+        <tr>
+          <td>Button LED Ground</td>
+          <td>GND on 4-width terminal block</td>
+        </tr>
+      </table>
+
+      <br>
+
+      <table>
+        <tr>
+          <th>First 8mm Mixing Platform LED Lead</th>
+          <th>Attach To</th>
+        </tr>
+        <tr>
+          <td>Data in</td>
+          <td>Pin 10 on Arduino Uno</td>
+        </tr>
+        <tr>
+          <td>Data out</td>
+          <td>Data in lead of second mixing platform LED</td>
+        </tr>
+        <tr>
+          <td>+5V</td>
+          <td>+5V on 8-width terminal block</td>
+        </tr>
+        <tr>
+          <td>Ground</td>
+          <td>GND on 8-width terminal block</td>
+        </tr>
+      </table>
+
+      <br>
+
+      <table>
+        <tr>
+          <th>Second 8mm Mixing Platform LED Lead</th>
+          <th>Attach To</th>
+        </tr>
+        <tr>
+          <td>Data in</td>
+          <td>Data out lead of first mixing platform LED</td>
+        </tr>
+        <tr>
+          <td>Data out</td>
+          <td>Data in lead of third mixing platform LED</td>
+        </tr>
+        <tr>
+          <td>+5V</td>
+          <td>+5V on 8-width terminal block</td>
+        </tr>
+        <tr>
+          <td>Ground</td>
+          <td>GND on 8-width terminal block</td>
+        </tr>
+      </table>
+
+      <br>
+
+      <table>
+        <tr>
+          <th>Third 8mm Mixing platform LED Lead</th>
+          <th>Attach To</th>
+        </tr>
+        <tr>
+          <td>Data in</td>
+          <td>Data out lead of second mixing platform LED</td>
+        </tr>
+        <tr>
+          <td>+5V</td>
+          <td>+5V on 8-width terminal block</td>
+        </tr>
+        <tr>
+          <td>Ground</td>
+          <td>GND on 8-width terminal block</td>
+        </tr>
+      </table>
+
+      <br>
+
+      <table>
+        <tr>
+          <th>Mixing Indicator LED Strip Lead</th>
+          <th>Attach To</th>
+        </tr>
+        <tr>
+          <td>Data in</td>
+          <td>Pin 7 on Arduino Uno</td>
+        </tr>
+        <tr>
+          <td>+5V</td>
+          <td>+5V on 4-width terminal block</td>
+        </tr>
+        <tr>
+          <td>Ground</td>
+          <td>GND on 4-width terminal block</td>
+        </tr>
+      </table>
+
+      <br>
+
+      <table>
+        <tr>
+          <th>Force Sensor Lead</th>
+          <th>Attach To</th>
+        </tr>
+        <tr>
+          <td>Data out</td>
+          <td>Pin A5 on Arduino Uno</td>
+        </tr>
+        <tr>
+          <td>Ground</td>
+          <td>GND on Arduino Uno</td>
+        </tr>
+      </table>
+
+      <table>
+        <tr>
+          <th>Lantern Jewel Lead</th>
+          <th>Attach To</th>
+        </tr>
+        <tr>
+          <td>Data in</td>
+          <td>Pin 11 on Arduino Uno</td>
+        </tr>
+        <tr>
+          <td>+5V</td>
+          <td>+5V on 4-width terminal block</td>
+        </tr>
+        <tr>
+          <td>Ground</td>
+          <td>GND on 4-width terminal block</td>
+        </tr>
+      </table>
+
+      <br>
+
+      <table>
+        <tr>
+          <th>Block Sensor 1 Lead</th>
+          <th>Attach To</th>
+        </tr>
+        <tr>
+          <td>+5V</td>
+          <td>+5V on x-width terminal block</td>
+        </tr>
+        <tr>
+          <td>Data out</td>
+          <td>Split between ground and analog</td>
+        </tr>
+        <tr>
+          <td>Ground</td>
+          <td>5.1 kΩ resistor → GND on terminal block</td>
+        </tr>
+        <tr>
+          <td>Analog</td>
+          <td>Pin A0 on Arduino Uno</td>
+        </tr>
+      </table>
+
+      <br>
+
+      <table>
+        <tr>
+          <th>Block Sensor 2 Lead</th>
+          <th>Attach To</th>
+        </tr>
+        <tr>
+          <td>+5V</td>
+          <td>+5V on x-width terminal block</td>
+        </tr>
+        <tr>
+          <td>Data out</td>
+          <td>Split between ground and analog</td>
+        </tr>
+        <tr>
+          <td>Ground</td>
+          <td>5.1 kΩ resistor → GND on terminal block</td>
+        </tr>
+        <tr>
+          <td>Analog</td>
+          <td>Pin A1 on Arduino Uno</td>
+        </tr>
+      </table>
+
+      <br>
+
+      <table>
+        <tr>
+          <th>Block Sensor 1 Lead</th>
+          <th>Attach To</th>
+        </tr>
+        <tr>
+          <td>+5V</td>
+          <td>+5V on x-width terminal block</td>
+        </tr>
+        <tr>
+          <td>Data out</td>
+          <td>Split between ground and analog</td>
+        </tr>
+        <tr>
+          <td>Ground</td>
+          <td>5.1 kΩ resistor → GND on terminal block</td>
+        </tr>
+        <tr>
+          <td>Analog</td>
+          <td>Pin A2 on Arduino Uno</td>
+        </tr>
+      </table>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <title>Mixing Platform Building Guide</title>
+    <meta name="description" content="A guide to the construction of CRISPEE's mixing platform" />
+    <meta name="keywords" content="CRISPEE, Wellesley College HCI, Tufts University DevTech, tangible, toy, bioengineering, education" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Mixing Platform Building Guide</h1>
+    <p><i>The color of the lantern light is dependent on the combinations of gene blocks set into the mixing platform, whose construction is detailed here.
+      More detailed step by step guides are available for sewing the conductive velcro circuits, crimping the ring connectors, and soldering the mixing
+      platform LEDs.</i></p>
+
+    <h2>Sewing Velcro</h2>
+    <p>We use conductive Velcro to make an electrical connection between the gene blocks and the mixing platform. On the mixing platform, we sew conductive
+       Velcro to one side of plain felt with conductive thread, and we sew a ring connector crimped to a silicone wire to the other side of the felt, also
+       with conductive thread. Electricity flows up through one silicone lead, through the conductive thread to the conductive Velcro on the platform and
+       then on the block, through the block’s unique resistor, and back down through another set of conductive Velcro, thread, ring connector, and silicone lead.</p>
+    <p>See the <a href="#">Sewing Guide</a> for a detailed description of the process of sewing the mixing platform side of this circuit</p>
+
+    <h2>Crimping Rings to Silicone Wire</h2>
+    <p>We used silicone wire for the leads coming out of the back of the mixing platform. Silicone coated wire is preferable because it is incredibly flexible
+       and does not become brittle and break like PVC coated wire under the stress of the motion of the mixing platform. We want to use silicone coated wire on</p>
+    <p>Block sensors:</p>
+    <ul>
+      <li>+5V</li>
+      <li>Data out</li>
+      <li>Ground</li>
+      <li>Analog</li>
+    </ul>
+    <p>Mixing LEDs:</p>
+    <ul>
+      <li>+5V</li>
+      <li>Ground</li>
+      <li>Data in</li>
+    </ul>
+    <p>To attach a silicone wire lead to an existing lead:</p>
+    <ol>
+      <li>Strip small sections of each lead</li>
+      <li>Splay the filaments of each stripped wire</li>
+      <li>Put the splayed filaments together (or the splayed filaments and the lead, in the case of an LED lead)</li>
+      <li>Twist the filaments together</li>
+      <li>Touch soldering tin to the top of the wire knot and apply heat to the bottom of the knot</li>
+      <li>Cover the knot in heat shrink and apply heat until the connection is snugly covered</li>
+    </ol>
+    <p>We use ring connectors to create the block sensors and to connect the block sensors and the mixing LEDs to the power block. This crimping process is described
+      in detail in the <a href="#">Crimping Guide</a>.</p>
+
+    <h2>Laser Cutting the Wooden Sections</h2>
+    <p>The vast majority of CRISPEE’s wooden pieces are laser cut. We used a Trotec Laser Engraver and loaded Adobe Illustrator files into the engraver job manager.
+      We printed CRISPEE’s pieces on ¼ inch thick MDF. In the Illustrator files, we standardized through-cut lines to RGB (255, 0, 0) and 0.1 pt weight, and we
+      standardized engraving lines (used only on the face plate and identifying marks) to RGB (255, 255, 255) and 0.1 pt weight. Through-cut lines required three
+      passes and engraving lines required one pass by the laser. </p>
+
+    <h2>Assembling the Box</h2>
+    <p>All wooden pieces of CRISPEE Emu have interlocking pieces. The mixing platform has symmetrical interlocking pieces, meaning that you’ll want to be careful not
+      to glue the back long face on upside down even though it interlocks upside down. The oval cutout on the back long face should be closer to the bottom of the platform.</p>
+    <p>To assemble the box:</p>
+    <ol>
+      <li>Dribble glue over the side interlocks of the short side pieces of the box. The side pieces should have roughly this shape:</li>
+      <img src="" alt="Screenshot of the cut file for the side of the mixing platform">
+      <li>Press the interlocks of the long side pieces into the interlocks of the short side pieces. The front and back pieces have roughly the below shape, however
+        the back has an oval cutout near the bottom</li>
+      <img src="" alt="Screenshot of the cut file for the front of the mixing platform">
+      <li>Dribble glue over all of the interlocks of the bottom face of the mixing platform</li>
+      <li>Press the whole unit of side faces into the interlocks of the bottom face</li>
+      <li>Let the unit dry for several hours, ensuring the interlocks are kept snugly together</li>
+    </ol>
+    <p>The top of the box should not be glued down, to make maintenance easier. Instead: </p>
+    <ol>
+      <li>Cut Velcro into ¼ inch wide strips</li>
+      <li>Cut a section of Velcro for each pair of interlocks. Interlocks vary in length, so be sure to measure each</li>
+      <li>Apply industrial glue to both sides of the Velcro unit</li>
+      <li>Place one glued side of the Velcro unit on the side face interlock</li>
+      <li>Rest the top face on top of the side face interlocks and the glued Velcro units</li>
+      <li>Leave the mixing platform to dry for several hours</li>
+      <li>The top face should easily rip off of the rest of the mixing platform</li>
+    </ol>
+
+    <h2>Adding Inserts</h2>
+    <p>The blocks sit too low in the mixing platform after assembling the box. To solve this problem, we add inserts in the bottom of the mixing platform.</p>
+    <p>The long side face of the mixing platform with the oval cutout is the back of the platform. This is the place for the sensor and mixing LED leads to exit the
+      platform and go to the Arduino or power block. The flat long side of the insert should be glued snugly against the front wall of the mixing platform, and the
+      side with rectangular cutouts should face the back wall of the mixing platform</p>
+    <p>To add the inserts:</p>
+    <ol>
+      <li>Spread industrial glue over the bottom of each of the inserts. You will know that it’s the bottom because the cutouts of the insert will align with the
+        non-cutout portions of the mixing platform top</li>
+        <li>Place an insert in the mixing platform box, with the flat side snugly against the front wall</li>
+        <li>Stack inserts as necessary</li>
+        <li>Leave the platform to dry for several hours</li>
+    </ol>
+
+    <h2>Gluing Wheels</h2>
+    <p>The mixing platform is meant to be shaken back and forth. In the Emu model, the platform sits on 1 inch wheels</p>
+    <img src="" alt="Image of a 1 inch diameter wheel">
+    <p>In previous models, the platform sat on modified drawer slides, but these were eliminated because they were relatively expensive, required inaccessible
+      equipment to modify, and added a lot of height and weight to CRISPEE.</p>
+    <p>The wheels can be screwed into or glued onto the bottom of the mixing platform. We chose to glue the wheels. To attach the wheels:</p>
+    <ol>
+      <li>Mark four rectangles on the bottom of the mixing platform for the wheel bases to be glued to. There should be two sets of wheels on either of the short
+        ends of the bottom of the mixing platform, each x inches apart from each other, according to the spacing of the wheel tracks on the base of CRISPEE</li>
+      <li>Dribble industrial glue around the perimeter of each rectangle</li>
+      <li>Spread the glue evenly across the measured wheel base area</li>
+      <li>Center the wheelbase over the glued area</li>
+      <li>Press the wheelbase down into the glue</li>
+      <li>Repeat for all four wheels</li>
+      <li>Let the wheels dry to the mixing platform bottom for several hours</li>
+    </ol>
+
+    <h2>Gluing Sensors</h2>
+    <p>Creation of the block sensors is detailed in the <a href="#">Sewing Guide</a> and the <a href="#">Electronic System Assembly Guide</a></p>
+    <p>Once the block sensors have been assembled with conductive thread, ring connectors, conductive Velcro, and felt, the sensors must be attached to the mixing platform</p>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
