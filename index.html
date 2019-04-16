@@ -42,6 +42,23 @@
 
     <h2>How Can I Build CRISPEE?</h2>
 
+    <h3>Resources</h3>
+    <p>There are a number of external guides and resources on the creation of CRISPEE v3. These resources are:</p>
+    <ul>
+      <li><a href="">Wooden Shell Assembly Guide</a></li>
+      <li><a href="">Platform Building Guide</a></li>
+      <li><a href="">Block Making Guide</a></li>
+      <li><a href="">Soldering Guide</a></li>
+      <li><a href="">Crimping Guide</a></li>
+      <li><a href="">Electrical System Assembly Guide</a></li>
+      <li><a href="">Sewing Guide</a></li>
+      <li><a href="">Block Sanding Video</a></li>
+      <li><a href="">Crimping Video</a></li>
+      <li><a href="">Adobe Illustrator Files</a></li>
+      <li><a href="">Arduino Code</a></li>
+    </ul>
+    <p>The section <a href="">Overview of CRISPEE Construction</a> gives a 10,000 foot view of CRISPEE's construction</p>
+
     <h3>Overview of CRISPEE Construction</h3>
 
     <h4>External Shell</h4>
@@ -147,29 +164,72 @@
       <li>Cutting wood</li>
       <li>Cutting felt</li>
     </ul>
-    <p>The construction of the gene blocks is detailed in the Block Making Guide. The construction of the conductive Velcro and resistor
-       assembly is detailed in the Sewing Guide.</p>
+    <p>The construction of the gene blocks is detailed in the <a href="">Block Making Guide</a>. The construction of the conductive Velcro and resistor
+       assembly is detailed in the <a href="">Sewing Guide</a>.</p>
 
     <h4>Electronics</h4>
+    <p>CRISPEE Emu’s electronics system uses</p>
+    <p>Materials:</p>
+    <ul>
+      <li>1 x Arduino Uno</li>
+      <li>1 x translucent clear 30mm Adafruit arcade button</li>
+      <li>3 x 8mm through-hole Neopixel RGB LEDs</li>
+      <li>12 x ⅜ inch long strips of conductive Velcro</li>
+      <li>1 x strip of 12 Neopixel RGBW LEDs</li>
+      <li>1 x 7 LED Neopixel Jewel</li>
+      <li>1 x force sensor</li>
+      <li>6 resistors of unique resistance values</li>
+      <li>3 x 5.1 KΩ resistors</li>
+      <li>Various lengths of high gauge silicone or PVC coated wire</li>
+      <li>Y x ring connectors</li>
+      <li>1 x 8-width terminal block</li>
+      <li>1 x 4-width terminal block</li>
+      <li>Solder</li>
+      <li>Heat shrink</li>
+    </ul>
+    <p>Equipment:</p>
+    <ul>
+      <li>Soldering Iron</li>
+      <li>Crimpers</li>
+      <li>Wire strippers</li>
+      <li>Helping hands</li>
+    </ul>
+    <p>Skills:</p>
+    <ul>
+      <li>Soldering</li>
+      <li>Crimping</li>
+      <li>Stripping wire</li>
+      <li>Gluing</li>
+      <li>Heat shrinking</li>
+      <li>Sewing</li>
+    </ul>
+    <p>Assembly of most of the electrical systems of CRISPEE Emu is detailed first in the Soldering Guide and then in the Electronic System Assembly Guide.</p>
 
     <h4>Code</h4>
-
-
-    <h3>Resources</h3>
-    <p>This guide refers to a number of external guides and resources on the creation of CRISPEE v3. These resources are:</p>
+    <p>CRISPEE Emu’s code is linked <a href="#">here</a>. It’s divided into steps and helper methods for each step. Step 1 is gene program verification
+       performed with data gathered by the block sensors triggered by the press of the arcade button on the face of CRISPEE Emu. Step 2 is tracking of
+       mixing progress by tracking compressions of the force sensor while indicating required mixing motions with the LEDs on the platform and on the face
+        of CRISPEE. Step 3 is lighting up the lantern on the face of CRISPEE with the data gathered by the block sensors.</p>
+    <p>CRISPEE Emu is run with an Arduino Uno. Unos only support a single thread of sequential actions, and so many of the LED features of CRISPEE work on
+      an interval basis: the time is noted, an element is switched on or off, and the Uno goes back to monitoring sensor input until the interval has passed
+      since the last time noted. Non-interval implementations of the LED features deaden sensors until an LED cycle has been completed.</p>
+    <p>Emu also supports a new feature, which is a built in reset action. Removing blocks during any step after the button press in step 1 will force CRISPEE
+       back to step 1. This establishes better continuity of action with the young users.</p>
+    <p>Coding CRISPEE v3 requires:</p>
+    <p>Materials:</p>
     <ul>
-      <li>Wooden Shell Assembly Guide</li>
-      <li>Platform Building Guide</li>
-      <li>Block Making Guide</li>
-      <li>Soldering Guide</li>
-      <li>Crimping Guide</li>
-      <li>Electrical System Assembly Guide</li>
-      <li>Sewing Guide</li>
-      <li>Block Sanding Demo Video</li>
-      <li>Crimping Demo Video</li>
-      <li>Adobe Illustrator Files</li>
-      <li>Arduino Code</li>
-    </<ul>
+      <li>Arduino IDE</li>
+      <li>Neopixel library</li>
+    </ul>
+    <p>Equipment:</p>
+    <ul>
+      <li>Laptop</li>
+      <li>Arduino to USB wire</li>
+    </ul>
+    <p>Skills:</p>
+    <ul>
+      <li>Coding in the C++ derivative that Arduino uses</li>
+    </ul>
 
 
 
