@@ -14,12 +14,12 @@
     <p><i>CRISPEE Emu’s electronics require soldering in a few key places: the mixing indicator, the arcade button quick connects, the lantern, the mixing platform LEDs, and the force sensor. This guide describes
       the pieces of these electronics that require soldering and other special connections.</i></p>
     <h2>Mixing Indicator</h2>
-    <img src="" alt="Picture of CRISPEE v3 highlighting the mixing indicator">
+    <img src="static/Emu Highlight Mixing LED Strip.png" alt="Picture of CRISPEE v3 highlighting the mixing indicator">
     <p>The LED strip on the front of CRISPEE, indicating the mixing motion, is a strip of RGBW Neopixel LEDs.</p>
-    <img src="" alt="Closeup of an exposed Neopixel strip">
+    <img src="static/Neopixel Strip.jpg" alt="Closeup of an exposed Neopixel strip">
     <p>You can cut these strips of LEDs to whatever length you need. Be sure to cut down the center of the column of copper strips, so that one half comes away with GND, DO, and 5V labels, and the other half comes
       away with GND, DI, and 5V labels</p>
-    <img src="" alt="Closeup of a cut Neopixel strip">
+    <img src="static/Cut Neopixel Strip.jpg" alt="Closeup of a cut Neopixel strip">
     <p>We do not want to solder to the DO side of the strip, because we have no need to daisy chain Neopixels across CRISPEE. Only solder leads to the side of the car with 5V, DI, and GND labels. The DI lead should
       be plugged into a digital data pin.</p>
     <p>To solder leads to these LED strips:</p>
@@ -35,9 +35,9 @@
 
     <h2>Modifying quick connect leads</h2>
     <p>Block checking is initiated with the press of a slightly modified 30 mm translucent clear Adafruit arcade button</p>
-    <img src="" alt="Picture of CRISPEE v3 highlighting the step 1 button">
+    <img src="static/Emu Highlight Button.png" alt="Picture of CRISPEE v3 highlighting the step 1 button">
     <p>The Adafruit arcade button comes with quick connect leads. These slide onto the pins of the button mechanism and have snaps on the other ends for wires</p>
-    <img src="" alt="Picture of the bottom of an arcade button">
+    <img src="static/Button Snaps.jpg" alt="Picture of the bottom of an arcade button">
     <p>We do want to use the button pin snaps, but we do not want to use the wire snaps. We cut the snaps off and strip the wires. One of the wires goes directly into a digital data pin. You may wish to solder a neater
       connector or wire onto the end of the data lead than to jam the stripped wire, with its many filaments and possibilities for shorting, into the pin. To do this, you would</p>
     <ol>
@@ -50,25 +50,25 @@
       <li>Apply heat to the heat shrink until there is a snug covering over the soldered connection</li>
     </ol>
     <p>The button also needs to be connected to ground. We don’t have enough +5V and ground pins on the Arduino for everything in CRISPEE that needs electricity, so we connect power leads to a terminal block</p>
-    <img src="" alt="Picture of an 8-width terminal block">
+    <img src="static/Terminal Block.jpg" alt="Picture of an 8-width terminal block">
     <p>To connect the ground lead of the button to a power block:</p>
     <ol>
       <li>Cut off the wire snap</li>
       <li>Strip a small section of the wire</li>
-      <li>Crimp a ring connector onto the stripped section. See the <a href="#">Crimping Guide</a> for thorough instructions on attaching a ring connector</li>
+      <li>Crimp a ring connector onto the stripped section. See the <a href="crimpingGuide.html">Crimping Guide</a> for thorough instructions on attaching a ring connector</li>
       <li>Thread a screw through the ring connector</li>
       <li>Bolt the screw into the terminal block</li>
     </ol>
     <p>If you use the LED that comes in the arcade button, you need leads to +5V and to a digital data pin. Modifying the leads to +5V and LED data follows similar rules to the ground and button data leads, respectively.</p>
 
     <h2>Soldering to Neopixel ring and individuals</h2>
-    <img src="" alt="Picture of CRISPEE v3 highlighting the lantern">
+    <img src="static/Emu Highlight Lantern.jpg" alt="Picture of CRISPEE v3 highlighting the lantern">
     <p>The lantern is a ring of 7 RGBW Neopixel LEDs inside of a plastic hemisphere coated with white acrylic paint on the inside to diffuse the light, since the Neopixels are very bright. This 7 LED ring is called a Jewel.</p>
-    <img src="" alt="Image of a Neopixel Jewel">
+    <img src="static/Glowing Neopixel Jewel.jpg" alt="Image of a Neopixel Jewel">
     <p>All Neopixel LED products follow the four pin schematic of +5V, ground, data in, and data out, with data out only being necessary for daisy chaining. Neopixel rings have the contacts for these various inputs in the
       middle of the boards. You can choose to thread wire through the contacts, or just solder on top of the front or back</p>
-    <img src="" alt="Image of the front of the Jewel's board">
-    <img src="" alt="Image of the back of the Jewel's board">
+    <img src="static/Neopixel Jewel Front.jpg" alt="Image of the front of the Jewel's board">
+    <img src="static/Neopixel Jewel Back.jpg" alt="Image of the back of the Jewel's board">
     <p>To attach leads to the back contacts of the  Jewel:</p>
     <ol>
       <li>Apply a small amount of tin to the Jewel input contact on the back. Don’t hold the iron on the Jewel too long, or you’ll damage the board.</li>
@@ -81,7 +81,7 @@
     </ol>
     <p>The mixing platform LEDs are individual 8mm Neopixels. These are daisy chained, so the first two Neopixels connect their data out pin to the next Neopixel’s data in pin.</p>
     <p>You can identify the pins using the following diagram when you identify the flat side of the LED:</p>
-    <img src="" alt="Diagram of a Neopixel LED, which has leads data in, +5V, ground, and data out from left to right if the flat portion of the Neopixel is on the right">
+    <img src="static/Neopixel Diagram.jpg" alt="Diagram of a Neopixel LED, which has leads data in, +5V, ground, and data out from left to right if the flat portion of the Neopixel is on the right">
     <p>You can connect the leads of the individual Neopixels through the following steps:</p>
     <ol>
       <li>Strip two ends of a short wire</li>
@@ -97,9 +97,9 @@
 
     <h2>Soldering to force sensor</h2>
     <p>The mixing process is tracked by compressions of a force sensor, similar to this one:</p>
-    <img src="" alt="Image of a force sensor with a round input section">
+    <img src="static/Force Sensor.jpg" alt="Image of a force sensor with a round input section">
     <p>By a one inch wheel on the bottom of the mixing platform</p>
-    <img src="" alt="Image of a 1 inch diameter wheel">
+    <img src="static/1 Inch Wheel.jpg" alt="Image of a 1 inch diameter wheel">
     <p>Connections are very shaky with the provided leads on the force sensor because they’re only meant to be inserted into a breadboard. Calling them leads at all instead of contacts is a
       tenuous choice in itself. So, we give the force sensor longer leads:</p>
     <ol>
@@ -119,14 +119,14 @@
       <li>Apply heat until the larger shrink keeps both connections solidly together, and the only movement is from the wire leads</li>
       <li>You’ll have to tape or glue down the sensor so it stays in place in the mixing platform track</li>
     </ol>
-    <img src="" alt="Image of the force sensor with soldered leads taped to the internal bottom of CRISPEE">
+    <img src="static/Force Sensor Under Platform.jpg" alt="Image of the force sensor with soldered leads taped to the internal bottom of CRISPEE">
 
     <h2>Creating Block Sensors</h2>
-    <p>At this point you should have the platform sensor pads assembled as described in the <a href="#">Sewing Guide</a>, with wires crimped into each of the ring connectors as described in the <a href="#">Crimping Guide</a>.
+    <p>At this point you should have the platform sensor pads assembled as described in the <a href="sewingGuide.html">Sewing Guide</a>, with wires crimped into each of the ring connectors as described in the <a href="crimpingGuide.html">Crimping Guide</a>.
       The sensors work by subtracting a known resistance value from a total resistance to calculate an unknown resistance value, the value added by the resistor in the block. The circuit setup
       is shown below:</p>
-    <img src="" alt="Diagram of the block sensor circuitry">
-    <img src="" alt="Diagram of the block sensor circuitry">
+    <img src="static/Block Sensor Circuit Diagram 1.jpg" alt="Diagram of the block sensor circuitry">
+    <img src="static/Block Sensor Circuit DIagram 2.jpg" alt="Diagram of the block sensor circuitry">
     <p>To finish making one block sensor:</p>
     <ol>
       <li>Designate one sensor pad wire as +5V and the other as data out</li>
