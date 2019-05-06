@@ -7,11 +7,50 @@
     <meta name="keywords" content="CRISPEE, Wellesley College HCI, Tufts University DevTech, tangible, toy, bioengineering, education" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="https://bootswatch.com/4/superhero/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="https://bootswatch.com/_assets/css/custom.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+
+    <div class="bs-component">
+              <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <a class="navbar-brand" href="index.html">CRISPEE v3</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarColor02">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="woodenShellGuide.html">Wooden Shell Assembly Guide</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="blockGuide.html">Block Making Guide</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="solderingGuide.html">Soldering Guide</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="crimpingGuide.html">Crimping Guide</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="sewingGuide.html">Sewing Guide</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="platformGuide.html">Platform Building Guide</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="electricalSystemGuide.html">Electrical System Assembly Guide</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+
     <h1>Electronic System Assembly Guide</h1>
-    <p><i>CRISPEE’s full electronic assembly is detailed here. It is assumed that you have already completed the steps in the <a href="#">Soldering Guide</a> and have already completed the Base External Shell and the Internal Wall steps of the <a href="#">Wooden Shell Assembly Guide</a>.</i></p>
+    <p><i>CRISPEE’s full electronic assembly is detailed here. It is assumed that you have already completed the steps in the <a href="solderingGuide.html">Soldering Guide</a> and have already completed the Base External Shell and the Internal Wall steps of the <a href="woodenShellGuide.html">Wooden Shell Assembly Guide</a>.</i></p>
 
     <h2>Arcade Button</h2>
     <p>To attach the button:</p>
@@ -35,7 +74,7 @@
       <li>Dribble a thin line of glue over the base of the acrylic light diffusion dome</li>
       <li>Press the dome down over the Jewel, ensuring the faceplate will still be centered over the platform opening</li>
     </ol>
-    <img src="static/Lantern and Faceplate.jpg" alt="Image of CRISPEE's lantern with a faceplate fitted over it">
+    <img id="lantern-and-faceplate" src="static/Lantern and Faceplate.jpg" alt="Image of CRISPEE's lantern with a faceplate fitted over it">
 
     <h2>Connecting All the Pieces</h2>
     <p>After the systems have been assembled and each electronic piece is glued to its place on CRISPEE, it’s just a matter of attaching the right lead or ring connector to the right pin

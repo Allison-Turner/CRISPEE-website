@@ -1,3 +1,403 @@
+/*Standardize spacing and fonts on all pages*/
 body{
+  margin: 50px;
+}
+
+p{
+  font-size: 20px;
+}
+
+li{
+  font-size: 18px;
+}
+
+th{
+  margin: 20px;
+}
+
+table{
+  margin: 30px;
+}
+
+tr{
+  margin: 20px;
+}
+
+td{
+  margin: 20px;
+}
+
+/*Home page images*/
+#gene-editor{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+#gene-editor-2{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+#cash-register{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+/*Wooden Shell Guide Images*/
+#external-side-diagram{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+#velcro-interlocks{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+#internal-wall-back-view{
+  width: 300px;
+  height: 200px;
+  margin: 20px;
+}
+
+#internal-wall-front-view{
+  width: 300px;
+  height: 200px;
+  margin: 20px;
+}
+
+/*Block Making Guide Images*/
+#end-cap{
+  width: 100px;
+  height: 200px;
+  margin: 20px;
+}
+
+#e6000{
+  width: 150px;
+  height: 100px;
+  margin: 20px;
+  transform: rotate(180deg);
+}
+
+#unsanded-block{
+  width: 400px;
+  height: 400px;
+  margin: 20px;
+}
+
+#sanded-block-1{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+#sanded-block-2{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+#block-bottom{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+#activator-top{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+#inhibitor-top{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+/*Soldering Guide Images*/
+#v3-highlight-mixing-strip{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+#neopixel-strip{
+  width: 600px;
+  height: 200px;
+  margin: 20px;
+}
+
+#cut-strip{
+  width: 300px;
+  height: 200px;
+  margin: 20px;
+}
+
+#v3-highlight-button{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+#button-snaps{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+#terminal-block{
+  width: 300px;
+  height: 200px;
+  margin: 20px;
+}
+
+#v3-highlight-lantern{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+#neopixel-jewel{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+#jewel-front{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+#jewel-back{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+#neopixel-diagram{
+  width: 300px;
+  height: 200px;
+  margin: 20px;
+}
+
+#force-sensor{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+#wheel{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+#force-sensor-placed{
+  width: 200px;
+  height: 350px;
+  margin: 20px;
+}
+
+#block-sensor-circuit-1{
+  width: 300px;
+  height: 200px;
+  margin: 20px;
+}
+
+#block-sensor-circuit-2{
+  width: 300px;
+  height: 200px;
+  margin: 20px;
+}
+
+/*Crimping Guide Images*/
+#smaller-section{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+#seam{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+#connector-in-crimper{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+#in-crimper-closeup{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+#crimping{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+#crimp-pleat{
+  width: 300px;
+  height: 200px;
+  margin: 20px;
+}
+
+#crimped{
+  width: 300px;
+  height: 200px;
+  margin: 20px;
+}
+
+#heat-shrink-cut{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+/*Electrical System Assembly Guide Images*/
+#lantern-and-faceplate{
+  width: 300px;
+  height: 200px;
+  margin: 20px;
+}
+
+/*Platform Assembly Guide Images*/
+#platform-side{
+  width: 300px;
+  height: 200px;
+  margin: 20px;
+}
+
+#platform-front{
+  width: 500px;
+  height: 200px;
+  margin: 20px;
+}
+
+#platform{
+  width: 400px;
+  height: 500px;
+  margin: 20px;
+}
+
+/*Sewing Guide Images*/
+#block-pad-velcro-dimensions{
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+}
+
+#chalk-diagram{
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+}
+
+#chalked-block-pads{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+#block-pad-velcroed{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+#velcro-sewing-diagram{
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+}
+
+#curled-resistor{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+#block-pad-resistor{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+#block-pad-resistor-closeup{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+#sensor-pad-velcro-dimensions{
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+}
+
+#sensor-pad-chalking-a{
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+}
+
+#sensor-pad-chalking-b{
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+}
+
+#chalked-sensor-pad-a{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+#chalked-sensor-pad-b{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+#sensor-pad-velcro-sewing{
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+}
+
+#sensor-pad-with-velcro{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+#heat-shrunk-connector{
+  width: 250px;
+  height: 200px;
+  margin: 20px;
+}
+
+#sewn-ring-connector{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+#wrapped-ring-connector{
+  width: 200px;
+  height: 200px;
   margin: 20px;
 }

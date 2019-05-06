@@ -7,9 +7,48 @@
     <meta name="keywords" content="CRISPEE, Wellesley College HCI, Tufts University DevTech, tangible, toy, bioengineering, education" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="https://bootswatch.com/4/superhero/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="https://bootswatch.com/_assets/css/custom.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+
+    <div class="bs-component">
+              <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <a class="navbar-brand" href="index.html">CRISPEE v3</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarColor02">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="woodenShellGuide.html">Wooden Shell Assembly Guide</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="blockGuide.html">Block Making Guide</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="solderingGuide.html">Soldering Guide</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="crimpingGuide.html">Crimping Guide</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="sewingGuide.html">Sewing Guide</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="platformGuide.html">Platform Building Guide</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="electricalSystemGuide.html">Electrical System Assembly Guide</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+
     <h1>Wooden Shell Assembly Guide</h1>
     <p><i>This guide details the assembly of the wooden body of CRISPEE, excluding the platform, which is detailed in the <a href="#">Platform Building Guide</a></i></p>
 
@@ -25,12 +64,12 @@
         <li>Apply industrial glue to the bottom interlocks of the front wall</li>
         <li>Fit the bottom interlocks into the front interlocks of the external bottom</li>
         <li>Apply industrial glue to the bottom and front interlocks of both side pieces</li>
-        <img src="static/External Side Wall.png" alt="Diagram of the external side, labeling the front and bottom">
+        <img id="external-side-diagram" src="static/External Side Wall.png" alt="Diagram of the external side, labeling the front and bottom">
         <li>Fit the interlocks of the side pieces into the interlocks of the external bottom</li>
         <li>Prop the side and front walls so that they dry perpendicularly to the external bottom</li>
         <li>Leave the assembly to dry for several hours</li>
     </ol>
-    <img src="static/Interlocks with Velcro.jpg" alt="Inside of the corner of external back, with velcro covering the protruding interlocking sections">
+    <img id="velcro-interlocks" src="static/Interlocks with Velcro.jpg" alt="Inside of the corner of external back, with velcro covering the protruding interlocking sections">
 
     <h2>Internal Walls</h2>
     <ol>
@@ -45,8 +84,8 @@
       <li>Fit the unit of internal walls into the cutouts of the internal bottom</li>
       <li>Leave the internal wall unit to dry for several hours, checking it periodically to ensure that the interlocks are still snugly together and straight</li>
     </ol>
-    <img src="static/Internal Walls From Back.jpg" alt="The exposed insides of CRISPEE, showing the internal walls blocking off the mixing platform">
-    <img src="static/Internal Walls From Front.jpg" alt="The front of CRISPEE, showing the part sectioned off by the internal walls">
+    <img id="internal-wall-back-view" src="static/Internal Walls From Back.jpg" alt="The exposed insides of CRISPEE, showing the internal walls blocking off the mixing platform">
+    <img id="internal-wall-front-view" src="static/Internal Walls From Front.jpg" alt="The front of CRISPEE, showing the part sectioned off by the internal walls">
 
     <h2>Closing Off the External Shell</h2>
     <p>The face and back of the external shell should be left unattached until everything else has been assembled, glued, and wired. See the <a href="sewingGuide.html">Sewing Guide</a>,

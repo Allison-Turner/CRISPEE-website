@@ -7,9 +7,48 @@
     <meta name="keywords" content="CRISPEE, Wellesley College HCI, Tufts University DevTech, tangible, toy, bioengineering, education" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="https://bootswatch.com/4/superhero/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="https://bootswatch.com/_assets/css/custom.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+
+    <div class="bs-component">
+              <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <a class="navbar-brand" href="index.html">CRISPEE v3</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarColor02">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="woodenShellGuide.html">Wooden Shell Assembly Guide</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="blockGuide.html">Block Making Guide</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="solderingGuide.html">Soldering Guide</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="crimpingGuide.html">Crimping Guide</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="sewingGuide.html">Sewing Guide</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="platformGuide.html">Platform Building Guide</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="electricalSystemGuide.html">Electrical System Assembly Guide</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+
     <h1>Block Making Guide</h1>
     <p><i>This is a guide on creating the gene blocks for CRISPEE Emu. Roughly, making gene blocks involves the cutting and shaping
        of the wood and the sewing and gluing of the felt and conductive sewables. Refer to the <a href="#">Sewing Guide</a> for an
@@ -30,7 +69,7 @@
       this end cap to provide a space for the resistor to be, since the block wouldn’t sit flatly in the mixing platform with the
       conductive Velcro circuit glued to the flat bottom.</p>
     <p>The Illustrator file for the end cap looks like this:</p>
-    <img src="static/End Cap.png" alt="Simple drawing of the end cap cutout">
+    <img id="end-cap" src="static/End Cap.png" alt="Simple drawing of the end cap cutout">
     <p>To cut the end caps:</p>
     <ol>
       <li>Ensure your through-cut lines are standardized</li>
@@ -42,7 +81,7 @@
     </ol>
     <p>You’ll want to keep the cutouts from the middle of the end caps, because these make great glue spreaders.</p>
     <p>We use industrial glue for most major joints on CRISPEE Emu, and the attachment of end caps is no exception</p>
-    <img src="static/E6000 Industrial Glue.jpg" alt="Image of a tube of E6000 industrial glue">
+    <img id="e6000" src="static/E6000 Industrial Glue.jpg" alt="Image of a tube of E6000 industrial glue">
     <p>To attach the end cap to the block:</p>
     <ol>
       <li>Place a line of industrial glue around the hole in the middle of the end cap</li>
@@ -54,7 +93,7 @@
 
     <h2>Sanding the Blocks</h2>
     <p>At this point, the end caps may be wider than the block itself and the block is rough around the edges.</p>
-    <img src="static/Unsanded Block.png" alt="Image of the unsanded block of wood with end cap">
+    <img id="unsanded-block" src="static/Unsanded Block.png" alt="Image of the unsanded block of wood with end cap">
     <p>We’ll polish up the blocks by sanding them down. See this video for a demonstration on sanding. We use a belt sander,
       but the same result is achievable with some sand paper and some elbow grease.</p>
     <p>To sand down the blocks on a belt sander:</p>
@@ -65,8 +104,8 @@
       <li>Lightly touch the sharp corners of the block to the sander to remove the worst of the angularity</li>
       <li>Roll the block from one face to the next on each corner, to thoroughly round out the shape</li>
     </ol>
-    <img src="static/Sanded Block 1.png" alt="Image of the smoothed out block">
-    <img src="static/Sanded Block 2.png" alt="Image of the smoothed out block">
+    <img id="sanded-block-1" src="static/Sanded Block 1.png" alt="Image of the smoothed out block">
+    <img id="sanded-block-2" src="static/Sanded Block 2.png" alt="Image of the smoothed out block">
 
     <h2>Sewing the Block Side of the Circuit</h2>
     <p>CRISPEE Emu recognizes blocks because each resistor sewn into each block has a unique resistance. We have to build a
@@ -88,7 +127,7 @@
       <li>Leave it to dry for several hours</li>
       <li>Trim the felt down to the edges of the block using fabric scissors.</li>
     </ol>
-    <img src="static/Block Bottom.jpg" alt="View of the glued and trimmed sewn circuit on the bottom of a block">
+    <img id="block-bottom" src="static/Block Bottom.jpg" alt="View of the glued and trimmed sewn circuit on the bottom of a block">
 
     <h2>Indicating Activators and Inhibitors</h2>
     <p>Tall blocks are activators and short blocks are inhibitors. There is one activator and one inhibitor for each of the
@@ -103,7 +142,7 @@
       <li>Leave the block standing for several hours so the glue can dry</li>
       <li>Trim the felt down to the edges of the block</li>
     </ol>
-    <img src="static/Activator Block Top.jpg" alt="view of a green activator block after gluing and trimming">
+    <img id="activator-top" src="static/Activator Block Top.jpg" alt="view of a green activator block after gluing and trimming">
     <p>To make an inhibitor, follow the same steps as for an activator, but in addition:</p>
     <ol>
       <li>Cut a 3 inch by 2 inch rectangle of black felt</li>
@@ -116,7 +155,7 @@
       <li>Leave the inhibitor block to dry for several hours</li>
       <li>Trim the felt X down to the edges of the inhibitor block</li>
     </ol>
-    <img src="static/inhibitor Block Top.jpg" alt="view of a blue inhibitor block after gluing and trimming">
+    <img id="inhibitor-top" src="static/inhibitor Block Top.jpg" alt="view of a blue inhibitor block after gluing and trimming">
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

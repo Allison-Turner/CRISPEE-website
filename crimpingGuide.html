@@ -7,9 +7,48 @@
     <meta name="keywords" content="CRISPEE, Wellesley College HCI, Tufts University DevTech, tangible, toy, bioengineering, education" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="https://bootswatch.com/4/superhero/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="https://bootswatch.com/_assets/css/custom.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+
+    <div class="bs-component">
+              <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <a class="navbar-brand" href="index.html">CRISPEE v3</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarColor02">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="woodenShellGuide.html">Wooden Shell Assembly Guide</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="blockGuide.html">Block Making Guide</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="solderingGuide.html">Soldering Guide</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="crimpingGuide.html">Crimping Guide</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="sewingGuide.html">Sewing Guide</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="platformGuide.html">Platform Building Guide</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="electricalSystemGuide.html">Electrical System Assembly Guide</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+
     <h1>Crimping Guide</h1>
     <p><i>This is a guide to crimping connectors onto leads for different electronics</i></p>
 
@@ -23,20 +62,20 @@
          crimper that is very close to its size, and so that the top part of the crimper will come down slightly to one side
          of the seam in the metal connector</li>
          <figure>
-           <img src="static/Smaller Section of Connector.png" alt="Image of a ring connector highlighting the smaller portion">
+           <img id="smaller-section" src="static/Smaller Section of Connector.png" alt="Image of a ring connector highlighting the smaller portion">
            <figcaption>The section indicated is the specified smaller section of the plastic cover on the connector</figcaption>
          </figure>
          <figure>
-           <img src="static/Seam in Connector.png" alt="Image of a ring connector highlighting the seam">
+           <img id="seam" src="static/Seam in Connector.png" alt="Image of a ring connector highlighting the seam">
            <figcaption>The arrow points to the seam in the metal contact that you should look to come down slightly to one
              side of</figcaption>
          </figure>
          <figure>
-           <img src="static/Connector in Crimper.png" alt="Image of the ring connector in the crimper with the correct placement of the seam highlighted">
+           <img id="connector-in-crimper" src="static/Connector in Crimper.png" alt="Image of the ring connector in the crimper with the correct placement of the seam highlighted">
            <figcaption>Proper placement of the connector in the crimper for first compression</figcaption>
          </figure>
          <figure>
-           <img src="static/Connector in Crimper 2.png" alt="Closeup of proper placement of the connector in the crimper for the first compression">
+           <img id="in-crimper-closeup" src="static/Connector in Crimper 2.png" alt="Closeup of proper placement of the connector in the crimper for the first compression">
            <figcaption>Closeup of proper placement of the connector in the crimper for the first compression</figcaption>
          </figure>
          <li>Feed the stripped portion of the lead into the metal connector on the inside of the crimper.
@@ -46,7 +85,7 @@
            </ol>
          </li>
          <li>Press the crimper together. You’ll have to press pretty hard</li>
-         <img src="static/Crimping.png" alt="Image of the connector being compressed in the crimper">
+         <img id="crimping" src="static/Crimping.png" alt="Image of the connector being compressed in the crimper">
          <li>Release the crimper</li>
          <li>Shift the connector so the top part of the crimper will come down on the other side of the seam in the metal
            connector</li>
@@ -59,14 +98,14 @@
          <li>Place the larger plastic section into a smaller part of the crimper, with the pleat facing out of the side and away
             from the joint of the crimper</li>
          <figure>
-           <img src="static/Crimping with Pleat.png" alt="Image of the ring connector placed in the crimper with its pleat facing away from the hinge">
+           <img id="crimp-pleat" src="static/Crimping with Pleat.png" alt="Image of the ring connector placed in the crimper with its pleat facing away from the hinge">
            <figcaption>Proper placement of the ring connector's pleat in the crimper</figcaption>
          </figure>
          <li>Compress the larger plastic section as small as possible</li>
-         <img src="static/Crimped.png" alt="Image of a fully compressed ring connector housing">
+         <img id="crimped" src="static/Crimped.png" alt="Image of a fully compressed ring connector housing">
          <li>Cut a section of heat shrink to cover a small portion of the lead and the connector up to the ring</li>
          <li>Slide the heat shrink over the connector, snugly up to the ring</li>
-         <img src="static/Heat Shrink Cut.png" alt="Image of the crimped ring connector with loose heat shrink pushed up as far as possible">
+         <img id="heat-shrink-cut" src="static/Heat Shrink Cut.png" alt="Image of the crimped ring connector with loose heat shrink pushed up as far as possible">
          <li>Apply heat to the heat shrink until the connector is snugly covered</li>
     </ol>
     <p>See this instructional video for a walk through of the crimping process</p>

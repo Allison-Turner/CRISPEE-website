@@ -7,9 +7,48 @@
     <meta name="keywords" content="CRISPEE, Wellesley College HCI, Tufts University DevTech, tangible, toy, bioengineering, education" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="https://bootswatch.com/4/superhero/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="https://bootswatch.com/_assets/css/custom.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+
+    <div class="bs-component">
+              <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <a class="navbar-brand" href="index.html">CRISPEE v3</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarColor02">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="woodenShellGuide.html">Wooden Shell Assembly Guide</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="blockGuide.html">Block Making Guide</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="solderingGuide.html">Soldering Guide</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="crimpingGuide.html">Crimping Guide</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="sewingGuide.html">Sewing Guide</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="platformGuide.html">Platform Building Guide</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="electricalSystemGuide.html">Electrical System Assembly Guide</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+
     <h1>Sewing Guide</h1>
     <p><i>In this sewing guide, the process has been divided into two separate sections: first, sewing the block pads, and second,
       sewing the sensor pads. However, each of these sections have the same three parts: 1) cutting and marking, 2) sewing velcro,
@@ -20,23 +59,23 @@
     <p>The felt will be cut much larger than necessary because it is essential that the felt is not too small. The overall size of
       the diagrams represents the whole felt pad, even though most of this is excess. </p>
     <ol>
-      <img src="static/Block Pad and Velcro Dimensions.png" alt="Picture of felt and Velcro sections with measurements">
+      <img id="block-pad-velcro-dimensions" src="static/Block Pad and Velcro Dimensions.png" alt="Picture of felt and Velcro sections with measurements">
       <li>Cut a 9” x 12” sheet of grey felt into 6 rectangles (each 4” x 4.5”)</li>
       <li>Cut loop velcro (soft side) into ⅜” strips (12 total)</li>
       <li>Based on the diagram below, use chalk to mark the edges of the final felt square and the edges of the velcro placement.
         These marks will only be made on the front side, leaving the back blank.</li>
-      <img src="static/Chalk Diagram.png" alt="Diagram of the felt swatch with placement and cut lines">
-      <img src="static/Chalked Block Pads.png" alt="Image of the felt marked with chalk to denote placement and sew lines">
+      <img id="chalk-diagram" src="static/Chalk Diagram.png" alt="Diagram of the felt swatch with placement and cut lines">
+      <img id="chalked-block-pads" src="static/Chalked Block Pads.png" alt="Image of the felt marked with chalk to denote placement and sew lines">
       <li>Repeat with all 6 grey felt swatches.</li>
     </ol>
 
     <h2>Block Pads, Part 2: Sew Velcro</h2>
-    <img src="static/Block Pad with Velcro.png" alt="Image of a felt swatch with conductive Velcro sewn on">
+    <img id="block-pad-velcroed" src="static/Block Pad with Velcro.png" alt="Image of a felt swatch with conductive Velcro sewn on">
     <ol>
       <li>Following the chalk markings that were made in the previous step, sew the loop velcro into the grey felt. Sew along all
         four edges of the velcro for a secure connection (see diagram below for stitch locations). This will be easiest and fastest
          with a sewing machine, yet hand sewing is also an option.</li>
-      <img src="static/Velcro Sewing Diagram.png" alt="Diagram of Velcro placement on the felt swatch">
+      <img id="velcro-sewing-diagram" src="static/Velcro Sewing Diagram.png" alt="Diagram of Velcro placement on the felt swatch">
       <li>Repeat with all six grey felt swatches.</li>
     </ol>
 
@@ -49,13 +88,13 @@
          <video  height="240" width="320" autoplay>
            <source src="resistorcurling.mp4" type="video/mp4">
          </video>
-      <img src="static/Curled Resistor.png" alt="image of a resistor with its two leads curled into rings">
+      <img id="curled-resistor" src="static/Curled Resistor.png" alt="image of a resistor with its two leads curled into rings">
       <li>Next, sew the curled resistors to the back side of the block pads (the side without velcro). Unlike the velcro sewing,
         this must be done by hand. </li>
-      <img src="static/Block Pad with Resistor.png" alt="Image of a resistor sewn onto a felt swatch">
+      <img id="block-pad-resistor" src="static/Block Pad with Resistor.png" alt="Image of a resistor sewn onto a felt swatch">
       <li>First, attach one end of the resistor to the felt by sewing multiple stitches around the resistor wire loop that was
         just created. </li>
-      <img src="static/Resistor Sewing Closeup.png" alt="Closeup of resistor loop stitched to sensor pad">
+      <img id="block-pad-resistor-closeup" src="static/Resistor Sewing Closeup.png" alt="Closeup of resistor loop stitched to sensor pad">
       <li>Next, once the resistor loop is securely in place, stitch up along the felt into the velcro. Sew back and forth along
         the velcro to ensure a secure connection. </li>
       <li>Using the same process, sew the second end of the resistor to the other velcro patch.</li>
@@ -64,32 +103,32 @@
 
     <h2>Sensor Pads, Part 1: Cut and Mark</h2>
     <ol>
-      <li>Cut 9” x 12” black felt into 4 rectangles (4.5” x 6”). Only 3 will be used, but this will produce an extra In case
+      <li>Cut 9” x 12” black felt into 4 rectangles (4.5” x 6”). Only 3 will be used, but this will produce an extra in case
         it is necessary</li>
       <li>Cut hook velcro (rough side) into ¾” strips (6 total)</li>
-      <img src="static/Sensor Pad and Velcro Dimensions.png" alt="Diagram of a black felt swatch and conductive Velcro with measurements">
+      <img id="sensor-pad-velcro-dimensions" src="static/Sensor Pad and Velcro Dimensions.png" alt="Diagram of a black felt swatch and conductive Velcro with measurements">
       <li>Based on the diagram below, use chalk to mark the edges of the final felt square and the edges of the velcro placement.</li>
       <figure>
-        <img src="static/Sensor pad Chalking Diagram.png" alt="Diagram of chalk markings on front of black felt swatch for placement and sew lines">
-        <img src="static/Sensor Pad Chalking Diagram Side B.png" alt="Diagram of chalk markings on back of black felt swatch for placement and sew lines">
+        <img id="sensor-pad-chalking-a" src="static/Sensor pad Chalking Diagram.png" alt="Diagram of chalk markings on front of black felt swatch for placement and sew lines">
+        <img id="sensor-pad-chalking-b" src="static/Sensor Pad Chalking Diagram Side B.png" alt="Diagram of chalk markings on back of black felt swatch for placement and sew lines">
         <figcaption>The red dot should be marked in the same location, front and back</figcaption>
       </figure>
-      <img src="static/Chalked Sensor Pad.png" alt="Front view of a chalk marked felt swatch">
-      <img src="static/Chalked Sensor Pad Side B.png" alt="Back view of a chalk marked felt swatch">
+      <img id="chalked-sensor-pad-a" src="static/Chalked Sensor Pad.png" alt="Front view of a chalk marked felt swatch">
+      <img id="chalked-sensor-pad-b" src="static/Chalked Sensor Pad Side B.png" alt="Back view of a chalk marked felt swatch">
     </ol>
 
     <h2>Sensor Pads, Part 2: Sew Velcro</h2>
     <ol>
       <li>Following the chalk marks that were made in the previous step, sew the hook velcro into the black felt by sewing along all
         four edges of the velcro. See diagram below for a guideline of where to sew</li>
-      <img src="static/Sensor Pad Velcro Sewing Diagram.png" alt="Diagram of Velcro placement on felt swatch">
-      <img src="static/Sensor Pad with Velcro.png" alt="Image of a black felt swatch with Velcro attached">
+      <img id="sensor-pad-velcro-sewing" src="static/Sensor Pad Velcro Sewing Diagram.png" alt="Diagram of Velcro placement on felt swatch">
+      <img id="sensor-pad-with-velcro" src="static/Sensor Pad with Velcro.png" alt="Image of a black felt swatch with Velcro attached">
       <li>Repeat with all three chalked swatches.</li>
     </ol>
 
     <h2>Sensor Pads, Part 3: Add electronics</h2>
     <p>In this step, you prepare the wiring that allows the velcro to act as a sensor and add it to the sensor felt pad.</p>
-    <img src="static/Heat Shrunk Connector.png" alt="Image of a crimped ring connector with heat shrink">
+    <img id="heat-shrunk-connector" src="static/Heat Shrunk Connector.png" alt="Image of a crimped ring connector with heat shrink">
     <ol>
       <li>Cut six 9” pieces of 26g silicone wire
         <ol>
@@ -108,10 +147,10 @@
     <ol>
       <li>First, take a colored wire and use conductive thread to secure the ring to the felt by sewing in a star shape around
         the entire ring.</li>
-        <img src="static/Sewn Ring Connector.png" alt="ring connector with conductive thread sewing">
+        <img id="sewn-ring-connector" src="static/Sewn Ring Connector.png" alt="ring connector with conductive thread sewing">
       <li>Next, wrap the conductive thread several times around the terminal ring (without sewing through felt) to secure the
         connection.</li>
-      <img src="static/Wrapped Ring Connector.png" alt="ring connector with extra conductive thread wrapping">
+      <img id="wrapped-ring-connector" src="static/Wrapped Ring Connector.png" alt="ring connector with extra conductive thread wrapping">
       <li>Once the terminal ring has a secure connection to the conductive thread, sew the thread across the felt to the velcro
         pad. Sew all the way across the velcro to secure the connection. </li>
       <li>Sew the next terminal ring (using a gray/black wire) to the second velcro patch facing in the same direction.</li>
